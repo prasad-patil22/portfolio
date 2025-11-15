@@ -186,7 +186,7 @@ Thanks!
             {/* Quotes Section */}
             <div 
               className="quotes-section"
-              data-aos="fade-right"
+              data-aos="fade-down"
               data-aos-delay="500"
             >
               <h2 className="section-title">Why Work With Me?</h2>
@@ -200,7 +200,7 @@ Thanks!
             {/* Contact Information */}
             <div 
               className="contact-info-section"
-              data-aos="fade-right"
+              data-aos="fade-down"
               data-aos-delay="600"
             >
               <h2 className="section-title">Contact Information</h2>
@@ -212,7 +212,7 @@ Thanks!
                     target={info.link.startsWith('http') ? '_blank' : '_self'}
                     rel="noopener noreferrer"
                     className="contact-info-item"
-                    data-aos="fade-right"
+                    data-aos="fade-down"
                     data-aos-delay={700 + (index * 100)}
                   >
                     <div className="contact-icon">
@@ -258,7 +258,7 @@ Thanks!
           <div className="right-side">
             <div 
               className="contact-form-section"
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-delay="500"
             >
               <h2 className="section-title">Send Message</h2>
