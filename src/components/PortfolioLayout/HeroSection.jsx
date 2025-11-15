@@ -47,7 +47,7 @@ const HeroSection = () => {
 
   return (
     <div>
-      <section id="home" className="hero" style={{paddingTop:"90px"}}>
+      <section id="home" className="hero" style={{paddingTop:"40px"}}>
         <div className="hero-container">
           <div className="hero-content">
             <div className="hero-text-content">

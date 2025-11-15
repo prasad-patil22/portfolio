@@ -75,7 +75,7 @@ const Contact = () => {
       icon: <FaMapMarkerAlt />,
       title: "Location",
       value: "A/P: Haragapur tal: Hukkeri Dist: Belagavi, Karnataka, India",
-      link: "#"
+      link: "https://www.google.com/maps/place/Haragapur,+Karnataka/data=!4m2!3m1!1s0x3bc0930bc6a4934f:0x53a95d033bcd0fb?sa=X&ved=1t:242&ictx=111"
     }
   ];
 
@@ -83,13 +83,13 @@ const Contact = () => {
     {
       icon: <FaLinkedin />,
       name: "LinkedIn",
-      url: "https://linkedin.com/in/yourprofile", 
+      url: "https://www.linkedin.com/in/prasad-patil-614a6b330/", 
       color: "hover:text-blue-400"
     },
     {
       icon: <FaGithub />,
       name: "GitHub",
-      url: "https://github.com/yourusername",
+      url: "https://github.com/prasad-patil22",
       color: "hover:text-gray-400"
     }
   ];
