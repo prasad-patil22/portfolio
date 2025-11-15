@@ -87,7 +87,7 @@ const Tech = () => {
               "Next.js", "Express.js", "Python", "Flask",
               "Webpack", "Material-UI", "Java", "C Programming", 
               "SQL", "Yolo", "OpenCV", "Nodemailer", "Tailwind CSS",
-              "Express", "Postman", "JWT", "Authentication"
+              "Express", "Postman", "JWT", "Authentication","Machine Learning"
             ].map((tech, index) => (
               <div
                 key={tech}
