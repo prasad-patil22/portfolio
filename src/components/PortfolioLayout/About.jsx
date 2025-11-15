@@ -360,7 +360,7 @@ const About = () => {
         .info-item {
           display: flex;
           align-items: center;
-          max-width:0.3rem;
+          
           gap: 15px;
           margin-bottom: 20px;
           padding: 2px;
