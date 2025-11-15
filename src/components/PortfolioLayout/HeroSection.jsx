@@ -7,11 +7,13 @@ import Tech from './Tech';
 import About from './About';
 import Experience from './Experience';
 import { SiLeetcode } from 'react-icons/si';
+import Contact from './Conatct';
 
 const MemoProject = React.memo(Project);
 const MemoTech = React.memo(Tech);
 const MemoAbout = React.memo(About);
 const MemoExperience = React.memo(Experience);
+const MemoContact = React.memo(Contact);
 
 const HeroSection = () => {
   const [text, setText] = useState('');
@@ -111,6 +113,9 @@ const HeroSection = () => {
       <MemoTech />
       <div>
         <MemoExperience />
+      </div>
+      <div>
+        <MemoContact />
       </div>
     </div>
   );
