@@ -47,6 +47,8 @@ const HeroSection = () => {
     // NOTE: we intentionally keep the same dependencies as your original code
   }, [text, isDeleting, loopNum, roles, typingSpeed]);
 
+  const publicUrl = process.env.PUBLIC_URL || '';
+
   return (
     <div>
       <section id="home" className="hero" style={{paddingTop:"40px"}}>
@@ -63,7 +65,13 @@ const HeroSection = () => {
                 Passionate about creating innovative web solutions and exploring the possibilities of artificial intelligence and machine learning.
               </p>
               <div className="hero-button-group">
-                <a href="/Prasad_CV.pdf" download className="hero-btn hero-btn-primary">
+                <a
+                  href={encodeURI(publicUrl + '/Prasad CV.pdf')}
+                  download="Prasad CV.pdf"
+                  className="hero-btn hero-btn-primary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FaDownload className="hero-btn-icon" />
                   Download Resume
                 </a>

@@ -15,10 +15,13 @@ import {
   RiHeartLine,
   RiCodeSSlashLine,
   RiLightbulbFlashLine,
-  RiTeamLine
+  RiTeamLine,
+  RiCodeBlock
 } from "react-icons/ri";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FaEnvelope } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 
 const About = () => {
   const personalInfo = [
@@ -30,8 +33,8 @@ const About = () => {
   const stats = [
     { number: "6+", label: "Months Experience", icon: <RiAwardLine /> },
     { number: "15+", label: "Projects Completed", icon: <RiCodeSSlashLine /> },
-    { number: "10+", label: "Happy Clients", icon: <RiTeamLine /> },
-    { number: "15+", label: "Technologies", icon: <RiLightbulbFlashLine /> }
+    { number: "15+", label: "Technologies", icon: <RiLightbulbFlashLine /> },
+    { number: "100%", label: "High-Quality Code", icon: <RiCodeBlock /> }
   ];
 
   const education = [
@@ -56,6 +59,8 @@ const About = () => {
       offset: 100
     });
   }, []);
+
+  const publicUrl = process.env.PUBLIC_URL || '';
 
   return (
     <div className="about-section">
@@ -96,14 +101,14 @@ const About = () => {
                   />
                   <div className="profile-overlay">
                     <div className="profile-socials">
-                      <a href="#" className="social-link">
+                      <a href="https://github.com/prasad-patil22" className="social-link">
                         <RiGithubFill />
                       </a>
-                      <a href="#" className="social-link">
+                      <a href="https://www.linkedin.com/in/prasad-patil-614a6b330/" className="social-link">
                         <RiLinkedinFill />
                       </a>
-                      <a href="#" className="social-link">
-                        <RiTwitterFill />
+                      <a href="https://leetcode.com/u/prasad2209/" className="social-link">
+                        <SiLeetcode />
                       </a>
                     </div>
                   </div>
@@ -138,7 +143,13 @@ const About = () => {
 
                   <div className="profile-actions">
                     {/* Link to the CV placed in the public folder as /Prasad_CV.pdf */}
-                    <a href="/Prasad CV.pdf" download style={{ display: 'block' }}>
+                    <a
+                      href={encodeURI(publicUrl + '/Prasad CV.pdf')}
+                      download="Prasad CV.pdf"
+                      style={{ display: 'block' }}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <Button
                         type="primary"
                         icon={<RiDownloadLine />}
