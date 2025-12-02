@@ -97,6 +97,7 @@ const HeroSection = () => {
                     alt="Prasad"
                   />
                 </div>
+                <div className="profile-caption">Prasad's Portfolio</div>
                 <div className="hero-floating-element hero-element-1"></div>
                 <div className="hero-floating-element hero-element-2"></div>
                 <div className="hero-floating-element hero-element-3"></div>
