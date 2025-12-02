@@ -6,16 +6,17 @@ import Project from './Projects';
 import Tech from './Tech';
 import About from './About';
 import Experience from './Experience';
+import { SiLeetcode } from 'react-icons/si';
+import Contact from './Conatct';
 
 const MemoProject = React.memo(Project);
-coimport Contact from './Conatct';
-nst MemoTech = React.memo(Tech);
+const MemoTech = React.memo(Tech);
 const MemoAbout = React.memo(About);
 const MemoExperience = React.memo(Experience);
+const MemoContact = React.memo(Contact);
 
 const HeroSection = () => {
-  const [text
-const MemoContact = React.memo(Contact);, setText] = useState('');
+  const [text, setText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const [typingSpeed, setTypingSpeed] = useState(150);
@@ -48,9 +49,9 @@ const MemoContact = React.memo(Contact);, setText] = useState('');
 
   return (
     <div>
-      <section id="home" className="hero">
+      <section id="home" className="hero" style={{paddingTop:"40px"}}>
         <div className="hero-container">
-  style={{paddingTop:"90px"}}         <div className="hero-content">
+          <div className="hero-content">
             <div className="hero-text-content">
               <h4 className="hero-welcome-text">Hello, I'm</h4>
               <h1 className="hero-name">Prasad</h1>
@@ -66,24 +67,24 @@ const MemoContact = React.memo(Contact);, setText] = useState('');
                   <FaDownload className="hero-btn-icon" />
                   Download Resume
                 </a>
-                <a href="#contact" className="hero-btn hero-btn-secondary">
+                <a href="/contact" className="hero-btn hero-btn-secondary">
                   <FaPaperPlane className="hero-btn-icon" />
                   Contact Me
                 </a>
-                <a href="#work" className="hero-btn hero-btn-outline">
+                <a href="/projects" className="hero-btn hero-btn-outline">
                   <FaEye className="hero-btn-icon" />
                   View My Work
                 </a>
               </div>
               <div className="hero-social-links">
-                <a href="https://github.com" aria-label="GitHub">
+                <a href="https://github.com/prasad-patil22" aria-label="GitHub">
                   <FaGithub />
                 </a>
-                <a href="https://linkedin.com" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/prasad-patil-614a6b330/" aria-label="LinkedIn">
                   <FaLinkedin />
                 </a>
-                <a href="https://twitter.com" aria-label="Twitter">
-                  <FaTwitter />
+                <a href="https://leetcode.com/u/prasad2209/" aria-label="LeetCode">
+                  <SiLeetcode />
                 </a>
               </div>
             </div>
@@ -113,12 +114,11 @@ const MemoContact = React.memo(Contact);, setText] = useState('');
       <div>
         <MemoExperience />
       </div>
+      <div>
+        <MemoContact />
+      </div>
     </div>
   );
 };
 
 export default HeroSection;
-
-      <div>
-        <MemoExperience />
-      </div>MeMemoContact
